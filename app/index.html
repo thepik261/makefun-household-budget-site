@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Ledger — Household Budget</title>
+<meta name="description" content="Home Ledger keeps one household's whole budget in one place: what came in, what went out, what is left, and what is next.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">$</span>
+      <span class="brand-name">Home Ledger</span>
+      <span class="brand-sub">The Alvarez household</span>
+    </a>
+    <nav class="mainnav" aria-label="Sections">
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/transactions" data-nav="transactions">Transactions</a>
+      <a href="#/budgets" data-nav="budgets">Budgets</a>
+      <a href="#/goals" data-nav="goals">Goals</a>
+      <a href="#/reports" data-nav="reports">Reports</a>
+      <a href="#/bills" data-nav="bills">Bills</a>
+    </nav>
+    <div class="month-picker">
+      <button id="prev-month" type="button" aria-label="Previous month">&lsaquo;</button>
+      <span id="month-label" aria-live="polite">November 2026</span>
+      <button id="next-month" type="button" aria-label="Next month">&rsaquo;</button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app" aria-live="polite"></main>
+<footer class="wrap pagefoot">
+  <p>Home Ledger is a demo household budget that runs entirely in your browser — your figures stay on this device, in local storage. <button id="reset-demo" type="button" class="linklike">Reset demo data</button></p>
+  <p class="fineprint">Made for the make.fun “Make the best household budget site” bounty. All figures are sample data for the Alvarez household.</p>
+</footer>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
